@@ -1,0 +1,6 @@
+graph TD;
+    A[Inicio] -->|Cargar pagina| B(Pagina de SPA)
+    B -->|Cargar main.js| C{¿Usuario realiza accion?}
+    C -->|Sí| D[Interacción de usuario]
+    D -->|Actualizar Vista| B
+    C -->|No| B
